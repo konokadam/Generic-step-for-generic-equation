@@ -70,7 +70,7 @@ module step_class
     
     
 
-    public :: step, allocate_step_type
+    public :: step
     
     !!!Constructor
     interface step
