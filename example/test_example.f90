@@ -3,7 +3,7 @@
 module point_mass_class
 
     use :: precision, only: rp
-    use :: step_class, only: step_abstract_type, derivative_abstract_type, allocate_step_type
+    use :: step_class, only: step_abstract_type, derivative_abstract_type, step
     use :: equation_of_motion_class
     use :: aero_params
 
