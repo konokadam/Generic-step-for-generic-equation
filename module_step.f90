@@ -1,5 +1,7 @@
 module step_class
 
+    !!!Author: Huseyin Emrah Konokman
+
     use :: precision, only: rp
     
     implicit none
