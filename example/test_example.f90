@@ -1,3 +1,5 @@
+!!!Author: Huseyin Emrah Konokman
+
 module point_mass_class
 
     use :: precision, only: rp
