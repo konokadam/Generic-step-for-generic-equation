@@ -16,7 +16,7 @@ module point_mass_class
         class(derivative_abstract_type), allocatable :: eq_of_motion_c   !!!Container for equation of motion
         class(step_abstract_type), allocatable :: step_c        !!!Container for step
     contains
-        procedure :: motion => point_mass_motion     !!!Procedure for the motion of the point mass
+        procedure :: motion => motion_point_mass     !!!Procedure for the motion of the point mass
     end type point_mass_type
 
     public :: point_mass
@@ -56,7 +56,7 @@ contains
     end subroutine point_mass_params
 
     !!!Motion procedure
-    subroutine point_mass_motion(point_mass, dt, limit, file)
+    subroutine motion_point_mass(point_mass, dt, limit, file)
 
         implicit none
         class(point_mass_type), intent(inout) :: point_mass
@@ -87,7 +87,7 @@ contains
        end do
        close(u)
 
-    end subroutine point_mass_motion
+    end subroutine motion_point_mass
 
 end module point_mass_class
 
