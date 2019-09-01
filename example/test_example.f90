@@ -96,6 +96,8 @@ program test
 
     use :: precision, only: rp
     use :: point_mass_class
+    
+    implicit none
 
     type(point_mass_type) :: pm
     real(rp) :: x, y, z, t, Vx, Vy, Vz, area, mass
