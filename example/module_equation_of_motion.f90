@@ -19,7 +19,7 @@ contains
             CD = 1.1_rp     !!!Assuming average CD with no change with Mach number
         !case ...
         case default
-            write(*,*) "CD data for fiven shape:", shape, " is not given in the code!"
+            write(*,*) "CD data for given shape:", shape, " is not given in the current version of the code!"
         end select
 
     end function drag_data_point_mass
