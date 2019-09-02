@@ -138,7 +138,7 @@ contains
         call f%derivative(ho2, x+ho2*xdot2, xdot3)   !!!3rd RK4 step
         call f%derivative(h, x+h*xdot3, xdot4)       !!!4th RK4 step
 
-        dx = h*(xdot1 + 2._rp*xdot2 + 2._rp*xdot3 + xdot4)/6._rp
+        dx = h * (xdot1 + 2._rp*xdot2 + 2._rp*xdot3 + xdot4)/6._rp
 
     end subroutine step_rk4
     
