@@ -73,7 +73,7 @@ contains
         !!!x(4) = x
         !!!x(5) = y
         !!!x(6) = z
-        !!!x(7) = s
+        !!!x(7) = t
 
         V = sqrt(x(1)**2 + x(2)**2 + x(3)**2)
         drago = 0.5_rp * rho * self%area/self%mass * self%CD
