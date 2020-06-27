@@ -64,8 +64,8 @@ contains
 
         real(rp) :: drago
         real(rp) :: V
-        real(rp) :: g = 9.80665_rp      !!!Assuming no change with altitude
-        real(rp) :: rho = 1.225_rp      !!!Assuming sea level conditions with no change with altitude
+        real(rp) :: g = 9.80665_rp
+        real(rp) :: rho = 1.225_rp
 
         !!!x(1) = Vx
         !!!x(2) = Vy
