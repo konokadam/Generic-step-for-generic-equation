@@ -62,7 +62,11 @@ module step_class
     end type step_rk4_type
     
     !!!Any new step types can be added here>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-    
+    !type, extends(step_abstract_type), public :: step_..._type
+
+    !contains
+    !    procedure, nopass :: step => step_...
+    !end type step_..._type
     
     
     !!!Any new step types can be added here<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
@@ -143,6 +147,9 @@ contains
     end subroutine step_rk4
     
     !!!Procedures for any new step types can be added here>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    !subroutine step_...(f, x, h, dx)
+    !
+    !end subroutine step...
     
     
     
